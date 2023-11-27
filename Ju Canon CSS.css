@@ -5,6 +5,7 @@
 body{
 	font-family:"SF Pro";
 	color: #000000;
+	align-items: center;
 }
 nav:after {
   overflow: hidden;
@@ -29,7 +30,6 @@ nav ul li a:hover {
 nav ul li {
  margin: 0px;
 display: inline-block;
-float: left;
 background-color: white;
 }
 nav ul {
@@ -66,11 +66,15 @@ header row {
 	display: flex;
 }
 header column {
-	width: 33.33%;
+	flex: 0 0 30%;
 	display: block;
-	padding: 10px 5px;
+	margin: 0;
+	height: 100vh;
+}
+header column img{
+	width: 100%;
 	height: auto;
-	flex: 33.33%;
+	display: block;
 }
 section {
 	padding: 0px 10px;
