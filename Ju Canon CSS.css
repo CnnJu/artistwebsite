@@ -1,0 +1,115 @@
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: "SF Pro";
+  src:url("Fonts/SF-Pro.ttf");
+}
+body{
+	font-family:"SF Pro";
+	color: #000000;
+}
+nav:after {
+  overflow: hidden;
+display: table;
+	clear: both;
+	top: 40px;
+}
+nav {
+	padding: 0px 0px 0px 100px;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+font-size: 28px;
+}
+nav ul li a:hover {
+  color: darkslategrey;
+}
+nav ul li {
+ margin: 0px;
+display: inline-block;
+float: left;
+background-color: white;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+position: relative;
+}
+nav ul li ul li:hover {
+	background: white;
+}
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 50px;
+}
+nav ul li:hover > ul {
+	display: inherit;
+}
+nav ul ul li {
+	width: 140px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+header{
+	/* display: flex; */
+      /* justify-content: space-around; */
+      /* align-items: center; */
+      /* height: 100vh; */
+      /* margin: 0; */
+}
+h1 {
+	font-size: 52px;
+	/* float: left; */
+	/* display: flex; */
+	letter-spacing: 2px;
+	/* margin: auto; */
+}
+section {
+	padding: 0px 10px;
+	font-size: 24px;
+}
+section p {
+	padding: 0px 10px;
+	font-size: 16px;
+}
+section ul{
+	padding: 0px 30px;
+	font-size: 18px;
+}
+section ol li {
+  color: black;
+  text-align: left;
+  padding: 4px 6px;
+  list-style-type: none;
+font-size: 16px;
+}
+section ul li {
+	  display: inline-block;
+  color: black;
+  text-align: left;
+  padding: 4px 6px;
+  text-decoration: none;
+	text-decoration: none;
+}
+section a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px; 
+}
+ .image-row{
+	display: flex;  
+	justify-content:  space-between;
+ }
+.image{
+    max-width: 99%;
+    height: auto;
+    width: auto;
+ }
+>>>>>>> f3ff9ca5adb2caf93d3aab0834691e92c969ecb6
