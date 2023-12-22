@@ -6,14 +6,28 @@ body {
   font-family: 'SF Pro';
   color: #000000;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav:after {
   overflow: hidden;
   display: table;
   clear: both;
   top: 40px;
 }
-nav {
-  padding: 0px 0px 0px 100px;
+.translated_version {
+  text-decoration: none;
+  font-size: 28px;
+  color: black;
 }
 nav ul li a {
   display: block;
