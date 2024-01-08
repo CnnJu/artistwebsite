@@ -165,10 +165,6 @@ images.forEach((image) => {
     img.alt = 'Image';
     img.className = 'grid-image';
 
-  const img = document.createElement("img");
-  img.src = image.path;
-  img.alt = "Image";
-
   anchor.appendChild(img);
   imageContainer.appendChild(anchor);
 });
