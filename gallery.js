@@ -160,6 +160,11 @@ images.forEach((image) => {
   anchor.href = image.mixcloudLink;
   anchor.target = "_blank";
 
+    const img = document.createElement('img');
+    img.src = image.path;
+    img.alt = 'Image';
+    img.className = 'grid-image';
+
   const img = document.createElement("img");
   img.src = image.path;
   img.alt = "Image";
