@@ -48,6 +48,7 @@
     const img = document.createElement('img');
     img.src = image.path;
     img.alt = 'Image';
+    img.className = 'grid-image';
 
     anchor.appendChild(img);
     imageContainer.appendChild(anchor);
