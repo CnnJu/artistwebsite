@@ -4,19 +4,19 @@ const imageContainer = document.getElementById("imageContainer");
 // Array containing image paths and corresponding Mixcloud links
 const images = [
   {
-    path: "imgGlazier/img01.130121.jpeg",
+    path: "imgGlazier/img01.130121.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier130121/",
   },
   {
-    path: "imgGlazier/img02.100221.jpeg",
+    path: "imgGlazier/img02.100221.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-100221/",
   },
   {
-    path: "imgGlazier/img03.100321.jpeg",
+    path: "imgGlazier/img03.100321.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-100321/",
   },
   {
-    path: "imgGlazier/img04.290421.jpeg",
+    path: "imgGlazier/img04.290421.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-290421/",
   },
   {
@@ -29,30 +29,30 @@ const images = [
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-240621/",
   },
   {
-    path: "imgGlazier/img08.220721.jpeg",
+    path: "imgGlazier/img08.220721.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-220721/",
   },
   {
-    path: "imgGlazier/img07.190821.JPG",
+    path: "imgGlazier/img07.190821.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-190821-rerun-cafe-otos-birthday-mix-apr2020/",
   },
   {
-    path: "imgGlazier/img09.160921.jpeg",
+    path: "imgGlazier/img09.160921.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-voidstepping-and-ju-canon-160921/",
   },
   {
-    path: "imgGlazier/img10.Ross141021.jpeg",
+    path: "imgGlazier/img10.Ross141021.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-141021/",
   },
   {
-    path: "imgGlazier/img11.Ecka111121.jpeg",
+    path: "imgGlazier/img11.Ecka111121.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-with-ecka-mordecai-111121/",
   },
   {
-    path: "imgGlazier/img12.Jackson060122.jpeg",
+    path: "imgGlazier/img12.Jackson060122.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-and-jackson-060122/",
   },
@@ -62,82 +62,82 @@ const images = [
       "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-li-song-030222/",
   },
   {
-    path: "imgGlazier/img14.Luciano030322.jpeg",
+    path: "imgGlazier/img14.Luciano030322.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-with-luciano-maggiore-030322/",
   },
   {
-    path: "imgGlazier/img15.310322.jpeg",
+    path: "imgGlazier/img15.310322.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-310322/",
   },
   {
-    path: "imgGlazier/img16.ALFREDO280422.jpeg",
+    path: "imgGlazier/img16.ALFREDO280422.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-alfredo92-280422/",
   },
   {
-    path: "imgGlazier/img17.RORY260522.jpeg",
+    path: "imgGlazier/img17.RORY260522.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-malvern-brume-and-ju-canon-260522/",
   },
   {
-    path: "imgGlazier/img18.ASH210722.jpeg",
+    path: "imgGlazier/img18.ASH210722.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-ash-reid-and-ju-canon-210722/",
   },
   {
-    path: "imgGlazier/img19.180822.jpeg",
+    path: "imgGlazier/img19.180822.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-180822/",
   },
   {
-    path: "imgGlazier/img21.150922.jpeg",
+    path: "imgGlazier/img21.150922.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-150922/",
   },
   {
-    path: "imgGlazier/img20.SCR131022.jpeg",
+    path: "imgGlazier/img20.SCR131022.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-rebroadcast-ju-canon-in-seydisfjordur-iceland-131022/",
   },
   {
-    path: "imgGlazier/img22.101122.jpeg",
+    path: "imgGlazier/img22.101122.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-101122/",
   },
   {
-    path: "imgGlazier/img23.rA050123.jpeg",
+    path: "imgGlazier/img23.rA050123.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-and-ra-tack-050123/",
   },
   {
-    path: "imgGlazier/img24.020223.jpeg",
+    path: "imgGlazier/img24.020223.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-020223/",
   },
   {
-    path: "imgGlazier/img25.YOSHINO020323.jpeg",
+    path: "imgGlazier/img25.YOSHINO020323.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-and-yoshino-shigihara-from-yama-warashi-020323/",
   },
   {
-    path: "imgGlazier/img26.XCRSWX300323.jpeg",
+    path: "imgGlazier/img26.XCRSWX300323.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-crystabel-riley-and-seymour-wright-from-xcrswx-300323/",
   },
   {
-    path: "imgGlazier/img27.270423.jpeg",
+    path: "imgGlazier/img27.270423.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-270423/",
   },
   {
-    path: "imgGlazier/img28.250523.jpeg",
+    path: "imgGlazier/img28.250523.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-250523/",
   },
   {
-    path: "imgGlazier/img29.220623.jpeg",
+    path: "imgGlazier/img29.220623.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-220623/",
   },
   {
-    path: "imgGlazier/img30.140923.jpeg",
+    path: "imgGlazier/img30.140923.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier-ju-canon-140923/",
   },
   {
-    path: "imgGlazier/img31.SCR121023.jpeg",
+    path: "imgGlazier/img31.SCR121023.jpg",
     mixcloudLink:
       "https://www.mixcloud.com/RTM_FM/glazier-ju-takes-over-seydisfjordur-community-radio-iceland-121023/",
   },
