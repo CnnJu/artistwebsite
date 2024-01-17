@@ -166,6 +166,11 @@ const images = [
     mixcloudLink:
       'https://www.mixcloud.com/RTM_FM/glazier-ísa-and-ju-canon-071223/',
   },
+  {
+    path: 'imgGlazier/img34.040124.jpg',
+    mixcloudLink:
+      'https://www.mixcloud.com/RTM_FM/glazier-ju-canon-040124/',
+  },
   // Add more images with corresponding Mixcloud links as needed
 ];
 
