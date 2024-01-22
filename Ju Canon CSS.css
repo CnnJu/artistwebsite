@@ -129,10 +129,11 @@
   }
 
   .image-container img {
-	max-width: 100%;
 	height: auto;
-	margin: 10px;
 	cursor: pointer;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 600px;
   }
   #imageContainer {
 	display: grid;
