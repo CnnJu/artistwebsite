@@ -131,9 +131,7 @@
   .image-container img {
 	height: auto;
 	cursor: pointer;
-	margin: 0 auto;
-	width: 80%;
-	max-width: 600px;
+
   }
   #imageContainer {
 	display: grid;
