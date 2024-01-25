@@ -118,7 +118,7 @@
 	justify-content: space-between;
   }
   .image {
-	max-width: 99%;
+	max-width: 100%;
 	height: auto;
 	width: auto;
   }
