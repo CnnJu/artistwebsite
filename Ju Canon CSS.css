@@ -1,148 +1,184 @@
 @font-face {
-	font-family: 'SF Pro';
-	src: url('Fonts/SF-Pro.ttf');
+  font-family: 'SF Pro';
+  src: url('Fonts/SF-Pro.ttf');
+}
+html,
+body {
+  font-family: 'SF Pro';
+  color: #000000;
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #000000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
   }
-  body {
-	font-family: 'SF Pro';
-	color: #000000;
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
   }
-  
-  header {
-	display: flex;
-	flex-direction: column;
-  }
-  
-  .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
-  
-  nav:after {
-	overflow: hidden;
-	display: table;
-	clear: both;
-	top: 40px;
-  }
-  .translated_version {
-	text-decoration: none;
-	font-size: 28px;
-	color: black;
-  }
-  nav ul li a {
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 28px;
-  }
-  nav ul li a:hover {
-	color: darkslategrey;
-  }
-  nav ul li {
-	margin: 0px;
-	display: inline-block;
-	background-color: white;
-  }
-  nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-  }
-  nav ul li ul li:hover {
-	background: white;
-  }
-  nav ul ul {
-	display: none;
-	position: absolute;
-	top: 50px;
-  }
-  nav ul li:hover > ul {
-	display: inherit;
-  }
-  nav ul ul li {
-	width: 140px;
-	float: none;
-	display: list-item;
-	position: relative;
-  }
-  /* header{ */
+}
+
+/* nav:after { overflow: hidden; display: table; clear: both; top: 40px; } .translated_version { text-decoration: none; font-size: 28px; color: black; } nav ul li a { display: block; color: black; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 28px; } nav ul li a:hover { color: darkslategrey; } nav ul li { margin: 0px; display: inline-block; background-color: white; } nav ul { list-style-type: none; margin: 0; padding: 0; position: relative; } nav ul li ul li:hover { background: white; } nav ul ul { display: none; position: absolute; top: 50px; } nav ul li:hover > ul { display: inherit; } nav ul ul li { width: 140px; float: none; display: list-item; position: relative; } */ /* header{ */
+/* display: flex; */
+/* justify-content: space-around; */
+/* align-items: center; */
+/* height: 100vh; */
+/* margin: 0; */
+/* } */
+h1 {
+  font-size: 52px;
+  /* float: left; */
   /* display: flex; */
-  /* justify-content: space-around; */
-  /* align-items: center; */
-  /* height: 100vh; */
-  /* margin: 0; */
-  /* } */
-  h1 {
-	font-size: 52px;
-	/* float: left; */
-	/* display: flex; */
-	letter-spacing: 2px;
-	/* margin: auto; */
-  }
-  section {
-	padding: 0px 10px;
-	font-size: 24px;
-  }
-  section p {
-	padding: 0px 10px;
-	font-size: 16px;
-  }
-  section ul {
-	padding: 0px 30px;
-	font-size: 18px;
-  }
-  section ol li {
-	color: black;
-	text-align: left;
-	padding: 4px 6px;
-	list-style-type: none;
-	font-size: 16px;
-  }
-  section ul li {
-	display: inline-block;
-	color: black;
-	text-align: left;
-	padding: 4px 6px;
-	text-decoration: none;
-  }
-  section a {
-	text-decoration: none;
-	color: black;
-	font-size: 18px;
-  }
-  .image-row {
-	display: flex;
-	justify-content: space-between;
-  }
-  .image {
-	max-width: 100%;
-	height: auto;
-	width: auto;
-  }
-  .image-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-  }
+  letter-spacing: 2px;
+  /* margin: auto; */
+}
+section {
+  padding: 0px 10px;
+  font-size: 24px;
+}
+section p {
+  padding: 0px 10px;
+  font-size: 16px;
+}
+section ul {
+  padding: 0px 30px;
+  font-size: 18px;
+}
+section ol li {
+  color: black;
+  text-align: left;
+  padding: 4px 6px;
+  list-style-type: none;
+  font-size: 16px;
+}
+section ul li {
+  display: inline-block;
+  color: black;
+  text-align: left;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+section a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.image-row {
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-  .image-container img {
-	height: auto;
-	cursor: pointer;
+.image-container img {
+  height: auto;
+  cursor: pointer;
+}
+#imageContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 20px; /* Adjust the gap between images as needed */
+}
 
-  }
-  #imageContainer {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-	gap: 20px; /* Adjust the gap between images as needed */
-  }
-  
-  .grid-image {
-	width: 100%;
-	max-width: 600px; /* Set a maximum width of 600 pixels */
-	height: auto; /* Maintain the aspect ratio */
-	display: block; /* Remove any default inline display */
-	margin: 0 auto; /* Center the image within its container */
-  }
+.grid-image {
+  width: 100%;
+  max-width: 600px; /* Set a maximum width of 600 pixels */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any default inline display */
+  margin: 0 auto; /* Center the image within its container */
+}
