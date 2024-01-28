@@ -17,7 +17,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 .navbar {
@@ -100,7 +100,7 @@ header {
   /* hamburger menu list */
   .menu {
     position: absolute;
-    top: 10px;
+    top: 15px;
     margin-top: 50px;
     left: 10px;
     flex-direction: column;
@@ -189,10 +189,8 @@ nav ul li a:hover {
 
 h1 {
   font-size: 52px;
-  /* float: left; */
-  /* display: flex; */
   letter-spacing: 2px;
-  /* margin: auto; */
+  padding-left: 10px;
 }
 section {
   padding: 0px 10px;
