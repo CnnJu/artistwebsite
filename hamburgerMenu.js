@@ -1,20 +1,10 @@
 const menu = document.querySelector('.menu');
-const menuList = menu.children;
+const liElements = menu.querySelectorAll('li');
+const menuToggle = document.getElementById('menu-toggle');
 
-// menu.addEventListener('click', function () {
-//   toggleVisibilityMenu();
-// });
-for (let i = 0; i < menuList.length; i++) {
-  menuList[i].addEventListener('click', function () {
-    toggleVisibilityMenu();
+for (let i = 0; i < liElements.length; i++) {
+  liElements[i].addEventListener('click', function () {
+    // Toggle the state of the #menu-toggle checkbox
+    menuToggle.checked = !menuToggle.checked;
   });
-}
-
-console.log(menuList);
-function toggleVisibilityMenu() {
-  if (menu.style.display !== 'none') {
-    menu.style.display = 'none';
-  } else {
-    menu.style.display = 'flex';
-  }
 }
