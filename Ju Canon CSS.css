@@ -42,7 +42,7 @@ header {
 
 .menu-button-container {
   display: none;
-  height: 100%;
+  height: 34px;
   width: 20px;
   cursor: pointer;
   flex-direction: column;
@@ -55,7 +55,6 @@ header {
 .menu-button,
 .menu-button::before,
 .menu-button::after {
-  margin-top: 2em;
   display: block;
   background-color: #000000;
   position: absolute;
@@ -94,7 +93,6 @@ header {
   /* actual hamburger icon */
   .menu-button-container {
     display: flex;
-    margin-top: 5px;
     margin-left: 5px;
   }
 
