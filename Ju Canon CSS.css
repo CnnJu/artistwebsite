@@ -95,6 +95,7 @@ header {
   .menu-button-container {
     display: flex;
     margin-top: 5px;
+    margin-left: 5px;
   }
 
   /* hamburger menu list */
