@@ -90,8 +90,8 @@ header {
 }
 
 .portfolio--links {
+  display: none;
   position: absolute;
-  display: flex;
   flex-direction: column;
 }
 .menu > li:hover .portfolio--links {
