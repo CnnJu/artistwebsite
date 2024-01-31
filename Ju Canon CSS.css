@@ -89,69 +89,19 @@ header {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
-  /* actual hamburger icon */
-  .menu-button-container {
-    display: flex;
-    margin-left: 5px;
-  }
-
-  /* hamburger menu list */
-  .menu {
-    position: absolute;
-    top: 15px;
-    margin-top: 50px;
-    left: 10px;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
-
-  /* unfolded h. menu li */
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  /* folded menu  */
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 3em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-  }
-
-  /* apply border radius to first / last li element and parent container */
-  .menu {
-    border-radius: 8px;
-  }
-  .menu > li:first-child {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  .menu > li:last-child {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
+.portfolio--links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
-
-/* .translated_version {
+.menu > li:hover .portfolio--links {
+  display: flex;
+}
+.translated_version {
   text-decoration: none;
   font-size: 28px;
   color: black;
-} */
+}
 nav ul {
   padding: 0;
 }
@@ -163,37 +113,20 @@ nav ul li a {
 nav ul li a:hover {
   color: darkslategrey;
 }
-/* nav ul li {
-  margin: 0px;
-  display: inline-block;
+
+.portfolio--links > li {
   background-color: white;
-} */
-
-/* nav ul li ul li:hover {
-  background: white;
-} */
-/* nav ul ul {
-  display: none;
-  position: absolute;
-  top: 50px;
-} */
-/* nav ul li:hover > ul {
-  display: inherit;
-} */
-/* nav ul ul li {
-  width: 140px;
-  float: none;
-  display: list-item;
-  position: relative;
-} */
-
-/* header{ */
-/* display: flex; */
-/* justify-content: space-around; */
-/* align-items: center; */
-/* height: 100vh; */
-/* margin: 0; */
-/* } */
+  text-align: center;
+  list-style-type: none;
+}
+.portfolio--links > li:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.portfolio--links > li:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
 h1 {
   font-size: 52px;
@@ -262,4 +195,69 @@ section a {
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Remove any default inline display */
   margin: 0 auto; /* Center the image within its container */
+}
+
+@media (max-width: 700px) {
+  /* actual hamburger icon */
+  .menu-button-container {
+    display: flex;
+    margin-left: 5px;
+  }
+
+  /* hamburger menu list */
+  .menu {
+    position: absolute;
+    top: 15px;
+    margin-top: 50px;
+    left: 10px;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  /* unfolded h. menu li */
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  /* folded menu  */
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 3em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em;
+    width: 100%;
+  }
+
+  /* apply border radius to first / last li element and parent container */
+  .menu {
+    border-radius: 8px;
+  }
+  .menu > li:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .menu > li:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .menu > li:hover .portfolio--links {
+    display: block;
+  }
+  .portfolio--links {
+    width: inherit;
+    left: 200px;
+  }
 }
