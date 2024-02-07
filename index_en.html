@@ -10,15 +10,19 @@
   <body>
     <header>
       <nav class="navbar">
-        <ul>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu" id="menu">
           <li>
             <a href="#">portfolios</a>
-            <ul>
+            <ul class="portfolio--links">
               <li>
                 <a
                   href="https://drive.google.com/file/d/1TP0iAJcThYShY0qNyKOMCxj-B4iKELyU/view?usp=drive_link"
                   target="_blank"
-                  >painter — visual artist</a
+                  >painter - visual artist</a
                 >
               </li>
               <li>
@@ -147,7 +151,10 @@
       <hr noshade />
       <article>
         <p>
-          <a href="https://www.mixcloud.com/ju-canon/playlists/glazier-on-rtm/">Glazier</a> is a monthly show on
+          <a href="https://www.mixcloud.com/ju-canon/playlists/glazier-on-rtm/"
+            >Glazier</a
+          >
+          is a monthly show on
           <a herf="https://rtm.fm/listen/glazier/">RTM.FM</a> where I play
           whatever I want to listen to. It also means inviting friends to play
           what they want to listen to. It all began in January 2023. Each time —
@@ -171,5 +178,6 @@
         </p>
       </article>
     </section>
+    <script src="hamburgerMenu.js"></script>
   </body>
 </html>
