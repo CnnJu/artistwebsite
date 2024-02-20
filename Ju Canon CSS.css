@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "SF Pro";
-  src: url("Fonts/SF-Pro.ttf");
+  font-family: 'SF Pro';
+  src: url('Fonts/SF-Pro.ttf');
 }
 html,
 body {
-  font-family: "SF Pro";
+  font-family: 'SF Pro';
   color: #000000;
   margin: 0;
   height: 100%;
@@ -31,6 +31,7 @@ header {
 .menu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
 }
@@ -64,12 +65,12 @@ header {
   border-radius: 10px;
 }
 .menu-button::before {
-  content: "";
+  content: '';
   margin-top: -10px;
 }
 
 .menu-button::after {
-  content: "";
+  content: '';
   margin-top: 10px;
 }
 
@@ -103,7 +104,7 @@ header {
 }
 .menu > li:hover .portfolio--links {
   display: flex;
-  /* text-shadow: #fc0 0px 0 20px; */
+  text-shadow: #fc0 0px 0 20px;
 }
 
 .translated_version {
