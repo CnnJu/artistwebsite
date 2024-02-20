@@ -93,11 +93,19 @@ header {
   width: 100%;
   display: none;
   position: absolute;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2em;
+}
+.portfolio--links > li {
+  background-color: white;
+  text-align: center;
+  list-style-type: none;
 }
 .menu > li:hover .portfolio--links {
   display: flex;
+  /* text-shadow: #fc0 0px 0 20px; */
 }
+
 .translated_version {
   text-decoration: none;
   font-size: 28px;
@@ -113,12 +121,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: darkslategrey;
-}
-
-.portfolio--links > li {
-  background-color: white;
-  text-align: center;
-  list-style-type: none;
 }
 
 h1 {
@@ -233,8 +235,8 @@ section a {
     width: 100%;
   }
 
-  .menu > li:hover .portfolio--links {
-    display: flex;
-    text-shadow: #fc0 0px 0 20px;
+  .portfolio--links {
+    flex-direction: column;
+    gap: 0;
   }
 }
