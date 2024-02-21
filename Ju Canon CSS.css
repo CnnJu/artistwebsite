@@ -31,6 +31,7 @@ header {
 .menu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
 }
@@ -90,13 +91,22 @@ header {
 }
 
 .portfolio--links {
+  width: 100%;
   display: none;
   position: absolute;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2em;
+}
+.portfolio--links > li {
+  background-color: white;
+  text-align: center;
+  list-style-type: none;
 }
 .menu > li:hover .portfolio--links {
   display: flex;
+  text-shadow: #fc0 0px 0 20px;
 }
+
 .translated_version {
   text-decoration: none;
   font-size: 28px;
@@ -112,20 +122,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: darkslategrey;
-}
-
-.portfolio--links > li {
-  background-color: white;
-  text-align: center;
-  list-style-type: none;
-}
-.portfolio--links > li:first-child {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-.portfolio--links > li:last-child {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 h1 {
@@ -209,12 +205,12 @@ section a {
     position: absolute;
     top: 15px;
     margin-top: 50px;
-    left: 10px;
+    left: 0;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
 
   /* unfolded h. menu li */
@@ -228,7 +224,6 @@ section a {
 
   /* folded menu  */
   #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
     height: 3em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -241,23 +236,8 @@ section a {
     width: 100%;
   }
 
-  /* apply border radius to first / last li element and parent container */
-  .menu {
-    border-radius: 8px;
-  }
-  .menu > li:first-child {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  .menu > li:last-child {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-  .menu > li:hover .portfolio--links {
-    display: block;
-  }
   .portfolio--links {
-    width: inherit;
-    left: 200px;
+    flex-direction: column;
+    gap: 0;
   }
 }
