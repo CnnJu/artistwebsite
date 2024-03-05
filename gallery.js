@@ -184,7 +184,6 @@ const images = [
   // Add more images with corresponding Mixcloud links as needed
 ];
 
-// Function to reverse the order of the images array
 function reverseImagesOrder() {
   images.reverse();
 }
