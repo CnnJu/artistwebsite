@@ -4,6 +4,11 @@ const imageContainer = document.getElementById('imageContainer');
 // Array containing image paths and corresponding Mixcloud links
 const images = [
   {
+    path: 'imgGlazier/GLAZIER_website010324.jpg',
+    mixcloudLink:
+      'https://www.mixcloud.com/RTM_FM/glazier-ju-canon-in-seydisfjordur-010324/',
+  },
+  {
     path: "imgGlazier/img01.130121.jpg",
     mixcloudLink: "https://www.mixcloud.com/RTM_FM/glazier130121/",
   },
@@ -171,8 +176,25 @@ const images = [
     mixcloudLink:
       'https://www.mixcloud.com/RTM_FM/glazier-ju-canon-040124/',
   },
+  {
+    path: 'GLAZIER_website 080224.jpg',
+    mixcloudLink:
+      'https://www.mixcloud.com/RTM_FM/glazier-ju-canon-and-080224/',
+  },
+  {
+    path: 'imgGlazier/GLAZIER_website010324.jpg',
+    mixcloudLink:
+      'https://www.mixcloud.com/RTM_FM/glazier-ju-canon-in-seydisfjordur-010324/',
+  },
   // Add more images with corresponding Mixcloud links as needed
 ];
+
+function reverseImagesOrder() {
+  images.reverse();
+}
+
+// Reverse the order of the images
+reverseImagesOrder();
 
 // Loop through the images array and create image elements with links
 images.forEach((image) => {
