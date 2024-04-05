@@ -172,7 +172,7 @@ const images = [
       'https://www.mixcloud.com/RTM_FM/glazier-ju-canon-040124/',
   },
   {
-    path: 'imgGlazier/GLAZIER_website 080224.jpg',
+    path: 'imgGlazier/GLAZIER_080224.jpg',
     mixcloudLink:
       'https://www.mixcloud.com/RTM_FM/glazier-ju-canon-and-080224/',
   },
